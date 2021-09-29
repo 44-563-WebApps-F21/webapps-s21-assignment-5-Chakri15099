@@ -59,17 +59,17 @@
  <p>The row of animals names breaks first because the containers with more width breaks first as width of Animals names is greater than
    width of letters it breaks first.
  </p>
- <div class="container ">
-  <img src="horse.jpg" class="img-fluid col-md-2" alt="horse"> 
-  <img src="Tiger.jpg" class="img-fluid col-md-2" alt="Tiger"> 
-  <img src="penguin.jpg" class="img-fluid col-md-2" alt="penguin" > 
+ <div class="container">
+  <img src="horse.jpg" class="img-fluid" alt="Horse" height="350" width="350">
+  <img src="Tiger.jpg" class="img-fluid" alt="Tiger" height="350" width="350">
+  <img src="penguin.jpg" class="img-fluid" alt="Penguin" height="350" width="350">
 </div>
 <br>
 <div class="container">
-  <img src="horse.jpg" class="img-thumbnail col-md-2" alt="Horse"> 
-  <img src="Tiger.jpg" class="img-thumbnail col-md-2" alt="Tiger"> 
-  <img src="penguin.jpg" class="img-thumbnail col-md-2" alt="penguin" > 
-</div>
+  <img src="horse.jpg" class="img-thumbnail" alt="Horse" height="310" width="310">
+  <img src="Tiger.jpg" class="img-thumbnail" alt="Tiger" height="310" width="310">
+  <img src="penguin.jpg" class="img-thumbnail" alt="penguin" height="310" width="310">
+</div> <br>
 <h4 style="border: 1px 1px; font-family: Georgia, 'Times New Roman', Times, serif;">Table</h4>
       <h5 style ="color: darkblue;">List of Animals,city and cars</h5>
       <table class="table table-success table-striped table-bordered table-hover">
@@ -137,16 +137,20 @@
         <div class="btn-group me-2" role="group" aria-label="dangerButtons">
             <button class=" btn btn-danger">i</button>
         </div>
-        <div class="dropdown" role="group">
-          <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Initials
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <li><a class="dropdown-item" href="plane.html">Plane</a></li>
-              <li><a class="dropdown-item" href="train.html">Train</a></li>
-          </ul>
-      </div>
+        
   </div>
+
+  
+  </div>
+  <div class="dropdown" role="group">
+    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Index
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <li><a class="dropdown-item" href="plane.html">Plane</a></li>
+        <li><a class="dropdown-item" href="train.html">Train</a></li>
+    </ul>
+</div>
 </nav>
 <br>
 <br>
@@ -165,23 +169,31 @@
   </div>
   <button class="btn btn-primary" type="submit" style="margin-bottom: 50px;">Submit</button>
 </form>
-
-        
-  
-    
-    
-
-      
-
-
-
-
-
- 
-
-
-    
-
-
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="horse.jpg" alt="Horse" >
+    <div class="card-body">
+      <h5 class="card-title">Horse</h5>
+      <p class="card-text">The horse or domestic horse (Equus caballus or Equus ferus caballus)[2][3] is a domesticated one-toed hoofed mammal. It belongs to the taxonomic family Equidae and is one of two extant species in the subgenus Equus. The horse has evolved over the past 45 to 55 million years from a small multi-toed creature, Eohippus, into the large, single-toed animal of today.</p>
+      <a href="https://en.wikipedia.org/wiki/Horse" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="Tiger.jpg" alt="Tiger">
+    <div class="card-body">
+      <h5 class="card-title"> Tiger </h5>
+      <p class="card-text">The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside. It is an apex predator, primarily preying on ungulates such as deer and wild boar.</p>
+      <a href="https://en.wikipedia.org/wiki/Tiger" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="penguin.jpg" alt="penguin">
+    <div class="card-body">
+      <h5 class="card-title">Penguin</h5>
+      <p class="card-text">Penguins are a group of aquatic flightless birds. They live almost exclusively in the southern hemisphere: only one species, the Galápagos penguin, is found north of the Equator. Highly adapted for life in the water, penguins have countershaded dark and white plumage and flippers for swimming.</p>
+      <a href="https://en.wikipedia.org/wiki/Penguin" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+ </div>
 </body>
 </html>
